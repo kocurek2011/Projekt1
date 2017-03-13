@@ -10,14 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.kotynski.kamil.projekt1.MainActivity">
 
-
-    //kodjhakdhaskdhasdkasdhkljh
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp">
 
         <LinearLayout
             android:orientation="vertical"
@@ -28,8 +28,7 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_height="224dp">
 
                 <Button
                     android:id="@+id/buttonblue"
@@ -64,6 +63,7 @@
                     android:layout_width="120dp"
                     android:layout_height="168dp"
                     android:layout_weight="1" />
+
             </LinearLayout>
         </LinearLayout>
 
