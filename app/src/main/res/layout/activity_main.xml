@@ -10,6 +10,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.kotynski.kamil.projekt1.MainActivity">
 
+
+    //kodjhakdhaskdhasdkasdhkljh
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
