@@ -1,6 +1,7 @@
 package com.kotynski.kamil.projekt1;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
@@ -11,6 +12,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import java.io.File;
 
@@ -18,27 +20,32 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int MY_PERMISSIONS_REQUEST = 1;
 
-    Button przycisk1, przycisk2, przycisk3, przycisk4;
+    Button przycisk1, przycisk2, przycisk3, przycisk4 ,przycisk5 ;
 
-    final static private int CAPTURE_IMAGE = 1;
+    final static private int CAPTURE_IMAGE = 2;
+
+    TextView tekst1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        tekst1 = (TextView) findViewById(R.id.textView);
+
         przycisk1 = (Button) findViewById(R.id.buttonblue);
         przycisk2 = (Button) findViewById(R.id.buttonred);
         przycisk3 = (Button) findViewById(R.id.buttonpurple);
         przycisk4 = (Button) findViewById(R.id.buttonyellow);
+        przycisk5 = (Button) findViewById(R.id)
 
 
         przycisk2.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), RED.class);
-                startActivity(i);
+              tekst1.setTextColor(Color.parseColor("#FF9C1111"));
             }
 
         });
@@ -55,8 +62,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), YELLOW.class);
-                startActivity(i);
+                tekst1.setText("SURPRISE");
+
+                przycisk5.setOnClickListener();
             }
 
         });
