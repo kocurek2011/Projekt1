@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="208dp"
+        android:layout_height="201dp"
+        android:id="@+id/clock"
+        android:background="@drawable/clock" />
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="181dp"
+        android:id="@+id/chat"
+        android:background="@drawable/chat"
+        android:elevation="0dp" />
 
 </LinearLayout>

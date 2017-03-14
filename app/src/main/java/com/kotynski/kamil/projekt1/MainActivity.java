@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         przycisk2 = (Button) findViewById(R.id.buttonred);
         przycisk3 = (Button) findViewById(R.id.buttonpurple);
         przycisk4 = (Button) findViewById(R.id.buttonyellow);
-        ;
+
 
 
 

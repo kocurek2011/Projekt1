@@ -32,15 +32,16 @@
 
                 <Button
                     android:id="@+id/buttonblue"
-                    android:background="@drawable/przycisk4"
+                    android:background="@drawable/aparat"
                     android:layout_width="175dp"
                     android:layout_height="172dp" />
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="163dp"
                     android:layout_height="167dp"
                     android:id="@+id/buttonred"
-                    android:background="@drawable/przycisk1" />
+                    android:background="@drawable/text"
+                    android:elevation="0dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -52,22 +53,16 @@
 
                 <Button
                     android:id="@+id/buttonpurple"
-                    android:background="@drawable/przycisk3"
-                    android:layout_height="142dp"
-                    android:layout_width="126dp" />
+                    android:background="@drawable/home"
+                    android:layout_height="165dp"
+                    android:layout_width="126dp"
+                    android:layout_weight="0.86" />
 
                 <Button
                     android:id="@+id/buttonyellow"
-                    android:background="@drawable/przycisk5"
-                    android:layout_width="100dp"
-                    android:layout_height="158dp" />
-
-                <Button
-                    android:text="Zmiana"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/przycisk5"
-                    android:layout_weight="1" />
+                    android:background="@drawable/heart"
+                    android:layout_height="167dp"
+                    android:layout_width="178dp" />
 
             </LinearLayout>
         </LinearLayout>
@@ -82,7 +77,8 @@
         android:textColor="@android:color/holo_blue_light"
         android:textSize="30sp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="84dp" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="57dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
 
 </RelativeLayout>

@@ -12,7 +12,6 @@ import android.widget.Button;
 
 public class Blue extends AppCompatActivity {
 
-    Button przycisk1, przycisk2, przycisk3, przycisk4;
 
 
     @Override

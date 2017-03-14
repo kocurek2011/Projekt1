@@ -10,10 +10,15 @@ import android.widget.Button;
 
 public class PURPLE extends AppCompatActivity {
 
+
+    Button przycisk6, przycisk7, przycisk8;
+
     @Override
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.purple);
-
+        przycisk6 = (Button) findViewById(R.id.clock);
     }
 }
