@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
         przycisk2 = (Button) findViewById(R.id.buttonred);
         przycisk3 = (Button) findViewById(R.id.buttonpurple);
         przycisk4 = (Button) findViewById(R.id.buttonyellow);
-        przycisk5 = (Button) findViewById(R.id)
+        ;
+
 
 
         przycisk2.setOnClickListener(new View.OnClickListener() {
@@ -63,11 +64,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 tekst1.setText("SURPRISE");
-
-                przycisk5.setOnClickListener();
             }
 
         });
+
 
         przycisk1.setOnClickListener(new View.OnClickListener() {
 
@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
     private static File getOutputMediaFile() {
         File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "Apteka");
         if (!mediaStorageDir.exists()) {
+            mediaStorageDir.mkdir();
             if (!mediaStorageDir.mkdirs()) {
                 Log.d("Apteka", "problem z utworzeniem katalogu");
                 return null;
