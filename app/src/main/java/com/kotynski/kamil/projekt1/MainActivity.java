@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button przycisk1, przycisk2, przycisk3, przycisk4 ,przycisk5 ;
 
-    final static private int CAPTURE_IMAGE = 2;
+    final static private int CAPTURE_IMAGE = 1;
 
     TextView tekst1;
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                File mediaDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "Apteka");
+                File mediaDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM), "Apteka");
                 File imgFile = new File(mediaDir.getPath() + File.separator + "IMG_" + "RECEPTA_" + ".jpg");
                 Uri photoURI = FileProvider.getUriForFile(MainActivity.this, BuildConfig.APPLICATION_ID + ".provider", getOutputMediaFile());
                 Uri imgUri =Uri.fromFile(new File(imgFile.getAbsolutePath()));
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private static File getOutputMediaFile() {
-        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "Apteka");
+        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM), "Apteka");
         if (!mediaStorageDir.exists()) {
             mediaStorageDir.mkdir();
             if (!mediaStorageDir.mkdirs()) {
