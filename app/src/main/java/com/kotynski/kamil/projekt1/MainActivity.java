@@ -38,9 +38,18 @@ public class MainActivity extends AppCompatActivity {
         przycisk2 = (Button) findViewById(R.id.buttonred);
         przycisk3 = (Button) findViewById(R.id.buttonpurple);
         przycisk4 = (Button) findViewById(R.id.buttonyellow);
+        przycisk5 = (Button) findViewById(R.id.przycisk5);
 
 
+        przycisk5.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Przycisk5.class);
+                startActivity(i);
+            }
+
+        });
 
         przycisk2.setOnClickListener(new View.OnClickListener() {
 

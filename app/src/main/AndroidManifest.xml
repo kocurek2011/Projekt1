@@ -36,6 +36,8 @@
         </activity>
         <activity android:name=".RED">
         </activity>
+        <activity android:name=".Przycisk5">
+        </activity>
 
 
         <provider

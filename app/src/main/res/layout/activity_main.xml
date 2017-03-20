@@ -59,10 +59,17 @@
                     android:layout_weight="0.86" />
 
                 <Button
+                    android:text="Button"
+                    android:layout_width="114dp"
+                    android:layout_height="217dp"
+                    android:id="@+id/przycisk5"
+                    android:elevation="0dp" />
+
+                <Button
                     android:id="@+id/buttonyellow"
                     android:background="@drawable/heart"
                     android:layout_height="167dp"
-                    android:layout_width="178dp" />
+                    android:layout_width="107dp" />
 
             </LinearLayout>
         </LinearLayout>
